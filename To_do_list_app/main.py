@@ -23,18 +23,34 @@
 #     print(todo_list, "\n")
 
 # -------------------------------------------------------------------------------#
-# day3
+# Day3
 # -------------------------------------------------------------------------------#
 
 todos = []
 
 while True:
-    user_action = input("type add or show ")
-
-    match user_action:
-        case "add":
-            todo = input("enter todo: ")
-            todos.append(todo)
+    print("\n")
+    user_action = input("type add or show or exit ")  # takes user input
+    user_action = user_action.strip()
+    match user_action:  # match statement used to match with input
+        case "add":  # case keyword to use value based conditions
+            todo = input("enter todo: ")  # todo taking another input
+            todos.append(todo)  # appended in todo list
             print("Next...", "\n")
-        case "show":
-            print(todos, "\n")
+        case "show":  # case keyword to show values used in the input
+            for (
+                element
+            ) in (
+                todos
+            ):  # using for loop to go through the elements of the list when asked to show
+                print(element, end=" ")
+
+        case "exit":  # to come out od the loop
+            break
+        case _:  # used for anything _ it can be anything
+            print(
+                """enter only these options:
+                  1) add 
+                  2) show
+                  3) exit """
+            )
