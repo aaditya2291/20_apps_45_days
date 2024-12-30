@@ -128,7 +128,7 @@
 #         case _:
 #             print(
 #                 """enter only these options:
-#                   1) add 
+#                   1) add
 #                   2) show
 #                   3) exit """
 #             )
@@ -152,6 +152,7 @@ while True:
                 encoding="utf-8",
             )
             todos = file.readlines()
+            file.close()
             todos.append(todo)
             file = open(
                 "F:\\aditya_git\\20_apps_45_days\\To_do_list_app\\todo.txt",
@@ -167,6 +168,13 @@ while True:
             for index, element in enumerate(todos):
                 print(f"{index+1}) {element}", end="\n")
             print("\n")
+            file = open(
+                "F:\\aditya_git\\20_apps_45_days\\To_do_list_app\\todo.txt",
+                "r",
+                encoding="utf-8",
+            )
+            todos = file.readlines()
+            file.close()
         case "edit":
             number = int(
                 input("enter the index number of the element you want to change")
