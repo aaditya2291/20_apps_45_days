@@ -1,6 +1,9 @@
 """to-do-app"""
 
-Message = "Enter a todo:"
+# ______________________________________________________________________________#
+# day2
+# ______________________________________________________________________________#
+# Message = "Enter a todo:"
 # todo1 = input(Message)
 # print(todo1)
 # todo2 = input(Message)
@@ -11,11 +14,27 @@ Message = "Enter a todo:"
 # todos = [todo1, todo2, todo3]
 # print(todos, "\n")
 
-todo_list = []
+# todo_list = []
+
+# while True:
+#     todo3 = input(Message)
+#     todo_list.append(todo3)
+#     print("Next....", "\n")
+#     print(todo_list, "\n")
+
+# -------------------------------------------------------------------------------#
+# day3
+# -------------------------------------------------------------------------------#
+
+todos = []
 
 while True:
-    todo3 = input(Message)
-    todo_list.append(todo3)
-    print(todo3, "\n")
-    print("Next....", "\n")
-    print(todo_list, "\n")
+    user_action = input("type add or show ")
+
+    match user_action:
+        case "add":
+            todo = input("enter todo: ")
+            todos.append(todo)
+            print("Next...", "\n")
+        case "show":
+            print(todos, "\n")
