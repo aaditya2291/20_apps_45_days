@@ -1,3 +1,2 @@
-''' 
-building a to do list application 
-'''
+# 20_apps_45_days
+building 20 apps
