@@ -3,3 +3,10 @@ collect
 throw
 thanks
 yo
+clean
+add
+show
+throw
+clean
+throw
+add again
