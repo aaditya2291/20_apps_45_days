@@ -10,3 +10,8 @@ throw
 clean
 throw
 add again
+pick
+dusty bags
+keep them away
+clean
+ok

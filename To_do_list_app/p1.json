@@ -1,0 +1,1184 @@
+{
+	"success": true,
+	"data": {
+		"name": "Secure Elements-SecureElements-SE-2040-Remote Teleops System-Concept-5",
+		"uuid": "6758AE5EDF578",
+		"threats": {
+			"Items": [
+				{
+					"RefId": "6758AEEC088DB",
+					"Identified": true,
+					"Name": "logs",
+					"Description": null,
+					"Cyber-Security-Properties": [
+						"Authorisation",
+						"Authenticity"
+					],
+					"Cyber-Security-Functional-Safety": {
+						"Safety": true,
+						"Security": true
+					},
+					"Security-Objective": {
+						"RefId": "6758AEEC088DD",
+						"Value": null
+					},
+					"Damage-Scenario": [
+						{
+							"Value": "Compromise of the Authorisation of the logs (Personal Identifiable Information) of the Secure logging item, resulting in Enables a future attack.",
+							"Cyber-Security-Property": "Authorisation"
+						},
+						{
+							"Value": "Compromise of the Authenticity of the logs (Personal Identifiable Information) of the Secure logging item, resulting in Enables a future attack.",
+							"Cyber-Security-Property": "Authenticity"
+						}
+					],
+					"Damage-Scenario-Comments": {
+						"RefId": "6758AEEC088DE",
+						"Value": "logs-Damage-Scenario-Comments"
+					},
+					"Parent-Ref-Id": "ea596849-e4ee-4b74-8c77-8cef5da5f908",
+					"Asset-Type": "Personal Identifiable Information",
+					"Adverse-Consequences": "Enables a future attack",
+					"Security-Property-Rationale": "Security Property Rationale",
+					"Threats": {
+						"Authorisation": {
+							"RefId": "67594B8420E85",
+							"Threat-Identified": true,
+							"Security-Objective": {
+								"RefId": "6758AEEC088DD",
+								"Value": "The Authorisation of the logs of the Secure logging item, shall be protected against Elevation of Privilege."
+							},
+							"Impact-Ratings": {
+								"Safety": "Severe",
+								"Financial": "Severe",
+								"Operational": "Severe",
+								"Privacy": "Severe"
+							},
+							"Impact-Rating-Value": "Severe",
+							"Type-WP24-Annex-5": "Threats related to communication channels",
+							"Threat-Sub-Scenario": "Spoofing of messages - Impersonation, Sybil attack",
+							"Threat-Type": [
+								{
+									"value": "Elevation of Privilege",
+									"label": "Elevation of Privilege"
+								}
+							],
+							"Attack-Type": "Attack",
+							"Attack-RefId": "67594B8420E88",
+							"Attack-Steps": [
+								{
+									"Attack-Step": "AST.1",
+									"config-type": "manual",
+									"Attack-Step-Type": "MANUAL",
+									"Selected-Attack-Step-id": null,
+									"Selected-Step": null,
+									"Attack-Step-RefId": "f33bcdc4-efdb-444c-9f8d-b4c3c519f3c0",
+									"Attack-Step-Logic": null,
+									"Attack-Step-Description": null,
+									"Tool-class": null,
+									"Attack-Vector-class": null,
+									"Attack-Step-Specialist-Expertise": "Layman",
+									"Attack-Step-Window-of-Opportunity": "Unlimited",
+									"Attack-Step-Attack-Equipment": "Standard",
+									"Attack-Step-Attack-Elapsed-Time": "Less-Than-1-Week",
+									"Attack-Step-Knowledge-of-Item": "Negligible",
+									"Attack-Step-Attack-Feasibility-Rating": "High",
+									"Attack-Step-Impact-Rating": "Severe",
+									"Attack-Step-Risk-Rating": "5",
+									"Attack-Step-Security-Leval-Rating": null,
+									"Attack-Step-SeCL-Pref": false
+								},
+								{
+									"Attack-Step": "AST.2",
+									"config-type": "manual",
+									"Attack-Step-Type": "MANUAL",
+									"Selected-Attack-Step-id": null,
+									"Selected-Step": null,
+									"Attack-Step-RefId": "6786ba03-750e-4acb-9be1-1cd961975be8",
+									"Attack-Step-Description": null,
+									"Tool-class": null,
+									"Attack-Vector-class": null,
+									"Attack-Step-Specialist-Expertise": "Layman",
+									"Attack-Step-Window-of-Opportunity": "Unlimited",
+									"Attack-Step-Attack-Equipment": "Standard",
+									"Attack-Step-Attack-Elapsed-Time": "Less-Than-1-Week",
+									"Attack-Step-Knowledge-of-Item": "Negligible",
+									"Attack-Step-Attack-Feasibility-Rating": "High",
+									"Attack-Step-Impact-Rating": "Severe",
+									"Attack-Step-Risk-Rating": "5",
+									"Attack-Step-Security-Leval-Rating": null,
+									"Attack-Step-SeCL-Pref": false
+								}
+							],
+							"Attack-Effect": "Enables a future attack",
+							"Attack-CAL": {
+								"Key": "High-Severe",
+								"Value": "CAL4",
+								"Color": "#FF0000"
+							},
+							"Damage-Scenario": null,
+							"Cyber-Security-Goal": "The Authorisation of the logs of the Secure logging item, shall be protected against Elevation of Privilege.",
+							"Attack-Diagram": {
+								"Source-Nodes": [],
+								"Source-Links": []
+							},
+							"Risk-Acceptance": {
+								"Type": {
+									"label": "Reducing the Risk",
+									"value": "REDUCE"
+								},
+								"Security-Controls": [
+									{
+										"label": "SC.JTAG_LOCKED",
+										"value": "SC.JTAG_LOCKED"
+									}
+								],
+								"Reduced-Risk-Impact-Rating": [],
+								"Reduced-Risk-Ratings": [],
+								"Reduced-Risk-Cyber-Security-Requirement": "Functional CyberSecurity Requirement",
+								"Reduced-Risk-Cyber-Security-Claim": [],
+								"Reduced-Risk-Cyber-Security-Claim-Document": null,
+								"Reduced-Risk-Cyber-Security-Requirement-RefId": null,
+								"Cyber-Security-Requirements-Linked-To-Component-Hardware": {
+									"label": "Telematics Control Unit",
+									"value": "ea596849-e4ee-4b74-8c77-8cef5da5f908"
+								},
+								"Cyber-Security-Requirements-Linked-To-Component-Software": {
+									"label": "Application Software",
+									"value": "application"
+								},
+								"Input-Technical-Cyber-Security-Requirement": [
+									"Technical CyberSecurity Requirement"
+								],
+								"Cyber-Security-Requirements-Linked-To-Component-Software-Sub-Group": "Bootloader",
+								"Cyber-Security-Requirements-Linked-To-Component-Hardware-Sub-Group": "Sensors",
+								"Reduced-Risk-Feasibility-Rating": {
+									"Specialist-Expertise": "Multiple",
+									"Window-of-Opportunity": "Moderate",
+									"Attack-Equipment": "Multiple Bespoke",
+									"Attack-Elapsed-Time": "Less-than 3 years",
+									"Knowledge-of-Item": "Severe",
+									"Attack-Feasibility-Rating": "Low",
+									"Impact-Rating": "Moderate",
+									"Risk-Rating": "2"
+								}
+							},
+							"Threat-Target": {
+								"label": "CAN bus",
+								"value": "CAN bus"
+							},
+							"attack_catalogue_id": "A.ID.00041",
+							"step-type": null,
+							"stepType": {
+								"label": "MANUAL",
+								"value": "MANUAL"
+							},
+							"Threat_id": "T.ID.00043",
+							"attack_uuid": "677276C851C97",
+							"threat_uuid": "677276C850D32",
+							"design_type": "SYSTEM",
+							"Parent-Cyber-Security": "Authorisation",
+							"Prefer-SeCL-Ratings": false,
+							"Hazop-Object-Data": {
+								"Hazards-Uuids": []
+							},
+							"Attack-Feasibility-Rating": "High",
+							"Attack-Risk-Value": {
+								"Key": "High-Severe",
+								"Value": 5,
+								"Impact": "High",
+								"Color": "#FF0000"
+							},
+							"config-type": {
+								"label": "Manual",
+								"value": "manual"
+							},
+							"threat-catalogue": null,
+							"Asset-generated-hazards": "no",
+							"Threat-Scenario-Description": "Elevation of Privilege with the ECU could result in Compromise of the Authorisation of the logs (Personal Identifiable Information) of the Secure logging item, resulting in Enables a future attack.",
+							"User-Input-Threat-Scenarios": "Threat Scenarios",
+							"Generated-Threat-Scenarios": null,
+							"Generated-Threat-Scenarios-Responses": [],
+							"Parent-Asset": "logs",
+							"Threat-Reduced": true
+						},
+						"Authenticity": {
+							"RefId": "67594B8420E89",
+							"Threat-Identified": true,
+							"Security-Objective": {
+								"RefId": "6758AEEC088DD",
+								"Value": "The Authenticity of the logs of the Secure logging item, shall be protected against Spoofing."
+							},
+							"Impact-Ratings": {
+								"Safety": "Negligible",
+								"Finanical": "Major",
+								"Operational": "Major",
+								"Privacy": "Major"
+							},
+							"Impact-Rating-Value": "Major",
+							"Type-WP24-Annex-5": "Threats from tampering of vehicle data\/code",
+							"Threat-Sub-Scenario": "Unauthorized changes to system diagnostic data, vehicle config data, system event logs",
+							"Threat-Type": [
+								{
+									"label": "Spoofing",
+									"value": "Spoofing"
+								}
+							],
+							"Attack-Type": "Attack",
+							"Attack-RefId": "6758D79073CB2",
+							"Attack-Steps": [
+								{
+									"Attack-step-id": "A.ID.0002.1",
+									"Attack-step-uuid": "6758D790749BF",
+									"Attack-Step": "Abuse UDS for Collection",
+									"config-type": "catalogue_based",
+									"Attack-Step-Type": "AUTOMOTIVE_ISAC",
+									"Selected-Attack-Step-id": "4",
+									"Selected-Step": {
+										"label": "Abuse UDS for Collection",
+										"value": 4,
+										"description": "<p>The adversary can attempt to abuse UDS ‘read’ capabilities, such as ‘read memory by address’ to access customer information from an ECU’s storage or memory.<\/p>"
+									},
+									"Attack-Step-RefId": "c0c04e3b-1892-4f46-b2ab-5d11b7aa57a5",
+									"Attack-Step-Description": "<p>The adversary can attempt to abuse UDS ‘read’ capabilities, such as ‘read memory by address’ to access customer information from an ECU’s storage or memory.<\/p>",
+									"Attack-Step-Attack-Feasibility-Rating": "High",
+									"Attack-Step-Impact-Rating": "Major",
+									"Attack-Step-Risk-Rating": 4,
+									"Attack-Step-Required-Resources": null,
+									"Attack-Step-Required-Knowhow": null,
+									"Attack-Step-Threat-Level": null,
+									"Attack-Step-Security-Leval-Rating": null,
+									"Attack-Step-Security-Leval-Rating-Color": null,
+									"Attack-Step-SeCL-Pref": true
+								},
+								{
+									"Attack-step-id": "A.ID.0002.2",
+									"Attack-step-uuid": "6758D790758B8",
+									"Attack-Step": "Bridge Vehicle Networks",
+									"config-type": "catalogue_based",
+									"Attack-Step-Type": "AUTOMOTIVE_ISAC",
+									"Selected-Attack-Step-id": "6",
+									"Selected-Step": {
+										"label": "Bridge Vehicle Networks",
+										"value": 6,
+										"description": "<p>The adversary may seek to bridge vehicle vehicle networks to obtain their objectives.<\/p><p>Some ECUs may possess multiple interfaces to the vehicle network, including interfaces that use different networking technologies, and an adversary could modify these ECUs to bridge networks that would otherwise be separated.<\/p><p>For example, an adversary that has gained initial access on an ECU with a connection to a vehicle’s Ethernet network may attempt to modify an ECU that is connected to the vehicle’s Ethernet and CAN networks so that they can extend their reach to ECU on the vehicle’s CAN network.<\/p>"
+									},
+									"Attack-Step-RefId": "31277491-0b15-48f3-8846-7a1f746c2779",
+									"Attack-Step-Description": "<p>The adversary may seek to bridge vehicle vehicle networks to obtain their objectives.<\/p><p>Some ECUs may possess multiple interfaces to the vehicle network, including interfaces that use different networking technologies, and an adversary could modify these ECUs to bridge networks that would otherwise be separated.<\/p><p>For example, an adversary that has gained initial access on an ECU with a connection to a vehicle’s Ethernet network may attempt to modify an ECU that is connected to the vehicle’s Ethernet and CAN networks so that they can extend their reach to ECU on the vehicle’s CAN network.<\/p>",
+									"Attack-Step-Attack-Feasibility-Rating": "High",
+									"Attack-Step-Impact-Rating": "Major",
+									"Attack-Step-Risk-Rating": 4,
+									"Attack-Step-Required-Resources": null,
+									"Attack-Step-Required-Knowhow": null,
+									"Attack-Step-Threat-Level": null,
+									"Attack-Step-Security-Leval-Rating": null,
+									"Attack-Step-Security-Leval-Rating-Color": null,
+									"Attack-Step-SeCL-Pref": true
+								}
+							],
+							"Attack-Effect": "Ensuring the authenticity of TCU (Transmission Control Unit) logs is crucial for several reasons, including accurate diagnostics, maintenance, legal compliance, and for validating claims in warranty disputes or accident investigations.",
+							"Attack-CAL": {
+								"Key": "High-Major",
+								"Value": "CAL4",
+								"Color": "#FF0000"
+							},
+							"Damage-Scenario": null,
+							"Cyber-Security-Goal": "The Authenticity of the logs of the Secure logging item, shall be protected against Spoofing.",
+							"Attack-Diagram": {
+								"Source-Nodes": [],
+								"Source-Links": []
+							},
+							"Risk-Acceptance": {
+								"Type": {
+									"label": "Avoiding the Risk",
+									"value": "AVOID"
+								},
+								"Security-Controls": [
+									{
+										"label": "SC.JTAG_LOCKED",
+										"value": "SC.JTAG_LOCKED"
+									}
+								],
+								"Reduced-Risk-Impact-Rating": [],
+								"Reduced-Risk-Ratings": [],
+								"Reduced-Risk-Cyber-Security-Claim": [
+									"Cyber Security Claim"
+								],
+								"Reduced-Risk-Cyber-Security-Claim-Document": null,
+								"Reduced-Risk-Cyber-Security-Requirement-RefId": null,
+								"Input-Technical-Cyber-Security-Requirement": [],
+								"Reduced-Risk-Feasibility-Rating": {
+									"Attack-Feasibility-Rating": null,
+									"Impact-Rating": null,
+									"Risk-Rating": null
+								}
+							},
+							"Threat_id": "T.ID.0002",
+							"attack_uuid": "6758D79073CB2",
+							"threat_uuid": "6758D726694CB",
+							"design_type": "SYSTEM",
+							"attack_catalogue_id": "A.ID.0002",
+							"Attack-Risk-Value": {
+								"Key": "High-Major",
+								"Value": 4,
+								"Impact": "High",
+								"Color": "#FFC000"
+							},
+							"step-type": {
+								"label": "AUTOMOTIVE_ISAC",
+								"value": "AUTOMOTIVE_ISAC"
+							},
+							"Threat-Target": {
+								"value": "ECU",
+								"label": "ECU"
+							},
+							"stepType": {
+								"label": "AUTOMOTIVE ISAC",
+								"value": "AUTOMOTIVE_ISAC"
+							},
+							"Attack-Feasibility-Rating": "High",
+							"config-type": {
+								"label": "Catalog Based",
+								"value": "catalogue_based"
+							},
+							"threat-catalogue": {
+								"label": "TCU Logs Authenticity",
+								"value": "6758D726694CB"
+							},
+							"Asset-generated-hazards": "no",
+							"Threat-Scenario-Description": "Encrypting the logs helps protect the data from unauthorized access and tampering. Only those with the correct decryption key, typically the manufacturer or authorized service providers, can access and read the logs.",
+							"User-Input-Threat-Scenarios": "Threat Scenarios",
+							"Generated-Threat-Scenarios": "1. An attacker intercepts communication between the remote teleops system and the asset logs, falsifies the data being transmitted, and spoofs the identity of the sender to gain unauthorized access to the system.\n\n2. An insider threat manipulates the asset logs to cover up their unauthorized activities within the remote teleops system, posing as an authorized user.\n\n3. A malicious actor gains access to the remote teleops system by spoofing their identity as an authorized user, allowing them to manipulate the asset logs and cover their tracks.",
+							"Generated-Threat-Scenarios-Responses": [
+								"1. An attacker intercepts communication between the remote teleops system and the asset logs, falsifies the data being transmitted, and spoofs the identity of the sender to gain unauthorized access to the system.\n\n2. An insider threat manipulates the asset logs to cover up their unauthorized activities within the remote teleops system, posing as an authorized user.\n\n3. A malicious actor gains access to the remote teleops system by spoofing their identity as an authorized user, allowing them to manipulate the asset logs and cover their tracks."
+							],
+							"Parent-Asset": "logs",
+							"Parent-Cyber-Security": "Authenticity",
+							"Threat-Reduced": true
+						}
+					},
+					"Additional-Vulnerability-Attacks": {
+						"Authorisation": [
+							{
+								"RefId": "0c5e6bc9-5d39-428e-95ac-2de42db0f443",
+								"Threat-Identified": true,
+								"Security-Objective": {
+									"RefId": "6758AEEC088DD",
+									"Value": null
+								},
+								"Impact-Ratings": {
+									"Safety": null,
+									"Finanical": null,
+									"Operational": null,
+									"Privacy": null
+								},
+								"Impact-Rating-Value": null,
+								"Type-WP24-Annex-5": null,
+								"Threat-Sub-Scenario": null,
+								"Threat-Type": null,
+								"Attack-Type": "Vulnerability",
+								"Attack-RefId": "5429fc72-e956-4654-af37-767e8ea72f65",
+								"Attack-Steps": [],
+								"Attack-Effect": null,
+								"Attack-CAL": null,
+								"Cyber-Security-Goal": null,
+								"Cyber-Security-Requirements": null,
+								"Attack-Diagram": {
+									"Source-Nodes": [],
+									"Source-Links": []
+								},
+								"Risk-Acceptance": {
+									"Type": null,
+									"Security-Controls": [],
+									"Reduced-Risk-Impact-Rating": [],
+									"Reduced-Risk-Ratings": [],
+									"Reduced-Risk-Cyber-Security-Requirement": null,
+									"Reduced-Risk-Cyber-Security-Claim": null,
+									"Reduced-Risk-Cyber-Security-Claim-Document": null
+								},
+								"Parent-Asset": "logs",
+								"Parent-Cyber-Security": "Authorisation"
+							}
+						],
+						"Authenticity": [
+							{
+								"RefId": "67594B8420E89",
+								"Threat-Identified": true,
+								"Security-Objective": {
+									"RefId": "6758AEEC088DD",
+									"Value": "The Authenticity of the logs of the Secure logging item, shall be protected against Spoofing."
+								},
+								"Impact-Ratings": {
+									"Safety": "Negligible",
+									"Finanical": "Major",
+									"Operational": "Major",
+									"Privacy": "Major"
+								},
+								"Impact-Rating-Value": "Major",
+								"Type-WP24-Annex-5": "Threats from tampering of vehicle data\/code",
+								"Threat-Sub-Scenario": "Unauthorized changes to system diagnostic data, vehicle config data, system event logs",
+								"Threat-Type": [
+									{
+										"label": "Spoofing",
+										"value": "Spoofing"
+									}
+								],
+								"Attack-Type": "Attack",
+								"Attack-RefId": "6758D79073CB2",
+								"Attack-Steps": [
+									{
+										"Attack-Step": "Abuse UDS for Collection",
+										"config-type": "catalogue_based",
+										"Attack-Step-Type": "AUTOMOTIVE_ISAC",
+										"Selected-Attack-Step-id": "4",
+										"Selected-Step": {
+											"label": "Abuse UDS for Collection",
+											"value": 4,
+											"description": "<p>The adversary can attempt to abuse UDS ‘read’ capabilities, such as ‘read memory by address’ to access customer information from an ECU’s storage or memory.<\/p>"
+										},
+										"Attack-Step-RefId": "c0c04e3b-1892-4f46-b2ab-5d11b7aa57a5",
+										"Attack-Step-Description": "<p>The adversary can attempt to abuse UDS ‘read’ capabilities, such as ‘read memory by address’ to access customer information from an ECU’s storage or memory.<\/p>",
+										"Base-Score": 6.2,
+										"Exploitability": 2.515145325,
+										"Vector-String": "CVSS:3.1\/AV:L\/AC:L\/PR:N\/UI:N\/S:U\/C:N\/I:H\/A:N",
+										"Attack-Complexity": 0.77,
+										"Attack-Vector": 0.55,
+										"Privileges-Required": 0.85,
+										"User-Interaction": 0.85,
+										"Confidentiality": 0,
+										"Integrity": 0.56,
+										"Availability": 0,
+										"Scope": "Unchanged",
+										"afr": "Medium",
+										"Attack-Step-Attack-Feasibility-Rating": "High",
+										"Attack-Step-Impact-Rating": null,
+										"Attack-Step-Risk-Rating": null,
+										"Attack-Step-Security-Leval-Rating": null,
+										"Attack-Step-SeCL-Pref": false
+									},
+									{
+										"Attack-step-id": "A.ID.0002.2",
+										"Attack-step-uuid": "6758D790758B8",
+										"Attack-Step": "Bridge Vehicle Networks",
+										"config-type": "catalogue_based",
+										"Attack-Step-Type": "AUTOMOTIVE_ISAC",
+										"Selected-Attack-Step-id": "6",
+										"Selected-Step": {
+											"label": "Bridge Vehicle Networks",
+											"value": 6,
+											"description": "<p>The adversary may seek to bridge vehicle vehicle networks to obtain their objectives.<\/p><p>Some ECUs may possess multiple interfaces to the vehicle network, including interfaces that use different networking technologies, and an adversary could modify these ECUs to bridge networks that would otherwise be separated.<\/p><p>For example, an adversary that has gained initial access on an ECU with a connection to a vehicle’s Ethernet network may attempt to modify an ECU that is connected to the vehicle’s Ethernet and CAN networks so that they can extend their reach to ECU on the vehicle’s CAN network.<\/p>"
+										},
+										"Attack-Step-RefId": "31277491-0b15-48f3-8846-7a1f746c2779",
+										"Attack-Step-Description": "<p>The adversary may seek to bridge vehicle vehicle networks to obtain their objectives.<\/p><p>Some ECUs may possess multiple interfaces to the vehicle network, including interfaces that use different networking technologies, and an adversary could modify these ECUs to bridge networks that would otherwise be separated.<\/p><p>For example, an adversary that has gained initial access on an ECU with a connection to a vehicle’s Ethernet network may attempt to modify an ECU that is connected to the vehicle’s Ethernet and CAN networks so that they can extend their reach to ECU on the vehicle’s CAN network.<\/p>",
+										"Attack-Step-Attack-Feasibility-Rating": "High",
+										"Attack-Step-Impact-Rating": "Major",
+										"Attack-Step-Risk-Rating": 4,
+										"Attack-Step-Required-Resources": null,
+										"Attack-Step-Required-Knowhow": null,
+										"Attack-Step-Threat-Level": null,
+										"Attack-Step-Security-Leval-Rating": null,
+										"Attack-Step-Security-Leval-Rating-Color": null,
+										"Attack-Step-SeCL-Pref": true
+									}
+								],
+								"Attack-Effect": "Ensuring the authenticity of TCU (Transmission Control Unit) logs is crucial for several reasons, including accurate diagnostics, maintenance, legal compliance, and for validating claims in warranty disputes or accident investigations.",
+								"Attack-CAL": {
+									"Key": "High-Major",
+									"Value": "CAL4",
+									"Color": "#FF0000"
+								},
+								"Damage-Scenario": null,
+								"Cyber-Security-Goal": "The Authenticity of the logs of the Secure logging item, shall be protected against Spoofing.",
+								"Attack-Diagram": {
+									"Source-Nodes": [],
+									"Source-Links": []
+								},
+								"Risk-Acceptance": {
+									"Type": {
+										"label": "Avoiding the Risk",
+										"value": "AVOID"
+									},
+									"Security-Controls": [
+										{
+											"label": "SC.JTAG_LOCKED",
+											"value": "SC.JTAG_LOCKED"
+										}
+									],
+									"Reduced-Risk-Impact-Rating": [],
+									"Reduced-Risk-Ratings": [],
+									"Reduced-Risk-Cyber-Security-Claim": [
+										"Cyber Security Claim"
+									],
+									"Reduced-Risk-Cyber-Security-Claim-Document": null,
+									"Reduced-Risk-Cyber-Security-Requirement-RefId": null,
+									"Input-Technical-Cyber-Security-Requirement": [],
+									"Reduced-Risk-Feasibility-Rating": {
+										"Attack-Feasibility-Rating": null,
+										"Impact-Rating": null,
+										"Risk-Rating": null
+									}
+								},
+								"Threat_id": "T.ID.0002",
+								"attack_uuid": "6758D79073CB2",
+								"threat_uuid": "6758D726694CB",
+								"design_type": "SYSTEM",
+								"attack_catalogue_id": "A.ID.0002",
+								"Attack-Risk-Value": {
+									"Key": "High-Major",
+									"Value": 4,
+									"Impact": "High",
+									"Color": "#FFC000"
+								},
+								"step-type": {
+									"label": "AUTOMOTIVE_ISAC",
+									"value": "AUTOMOTIVE_ISAC"
+								},
+								"Threat-Target": {
+									"value": "ECU",
+									"label": "ECU"
+								},
+								"stepType": {
+									"label": "AUTOMOTIVE_ISAC",
+									"value": "AUTOMOTIVE_ISAC"
+								},
+								"Attack-Feasibility-Rating": "High",
+								"config-type": {
+									"label": "Catalog Based",
+									"value": "catalogue_based"
+								},
+								"threat-catalogue": {
+									"label": "TCU Logs Authenticity",
+									"value": "6758D726694CB"
+								},
+								"Asset-generated-hazards": true,
+								"Threat-Scenario-Description": "Spoofing with the ECU could result in Compromise of the Authenticity of the logs (Personal Identifiable Information) of the Secure logging item, resulting in Enables a future attack.",
+								"User-Input-Threat-Scenarios": "Threat Scenarios",
+								"Generated-Threat-Scenarios": "1. An attacker intercepts communication between the remote teleops system and the asset logs, falsifies the data being transmitted, and spoofs the identity of the sender to gain unauthorized access to the system.\n\n2. An insider threat manipulates the asset logs to cover up their unauthorized activities within the remote teleops system, posing as an authorized user.\n\n3. A malicious actor gains access to the remote teleops system by spoofing their identity as an authorized user, allowing them to manipulate the asset logs and cover their tracks.",
+								"Generated-Threat-Scenarios-Responses": [
+									"1. An attacker intercepts communication between the remote teleops system and the asset logs, falsifies the data being transmitted, and spoofs the identity of the sender to gain unauthorized access to the system.\n\n2. An insider threat manipulates the asset logs to cover up their unauthorized activities within the remote teleops system, posing as an authorized user.\n\n3. A malicious actor gains access to the remote teleops system by spoofing their identity as an authorized user, allowing them to manipulate the asset logs and cover their tracks."
+								],
+								"Parent-Asset": "logs",
+								"Parent-Cyber-Security": "Authenticity",
+								"Threat-Reduced": true,
+								"Prefer-SeCL-Ratings": false,
+								"Hazop-Object-Data": {
+									"Hazards-Uuids": []
+								}
+							}
+						]
+					},
+					"Cyber-Security-Properties-Options": [
+						{
+							"label": "Authorisation",
+							"value": "Authorisation"
+						},
+						{
+							"label": "Authenticity",
+							"value": "Authenticity"
+						}
+					]
+				},
+				{
+					"RefId": "6758AEEC0894C",
+					"Identified": true,
+					"Name": "secret",
+					"Description": null,
+					"Cyber-Security-Properties": [],
+					"Cyber-Security-Functional-Safety": {
+						"Safety": false,
+						"Security": false
+					},
+					"Security-Objective": {
+						"RefId": "6758AEEC0894E",
+						"Value": null
+					},
+					"Damage-Scenario": [],
+					"Damage-Scenario-Comments": {
+						"RefId": "6758AEEC0894F",
+						"Value": null
+					},
+					"Parent-Ref-Id": "ea596849-e4ee-4b74-8c77-8cef5da5f908",
+					"Asset-Type": "Intellectual Property",
+					"Adverse-Consequences": null,
+					"Security-Property-Rationale": null,
+					"Threats": []
+				},
+				{
+					"RefId": "6758AEEC08950",
+					"Identified": true,
+					"Name": "software",
+					"Description": null,
+					"Cyber-Security-Properties": [],
+					"Cyber-Security-Functional-Safety": {
+						"Safety": false,
+						"Security": false
+					},
+					"Security-Objective": {
+						"RefId": "6758AEEC08951",
+						"Value": null
+					},
+					"Damage-Scenario": [],
+					"Damage-Scenario-Comments": {
+						"RefId": "6758AEEC08952",
+						"Value": "software-Damage-Scenario-Comments"
+					},
+					"Parent-Ref-Id": "ea596849-e4ee-4b74-8c77-8cef5da5f908",
+					"Asset-Type": "Personal Identifiable Information",
+					"Adverse-Consequences": null,
+					"Security-Property-Rationale": null,
+					"Threats": []
+				},
+				{
+					"RefId": "6758AEEC08953",
+					"Identified": true,
+					"Name": "credentials",
+					"Description": null,
+					"Cyber-Security-Properties": [],
+					"Cyber-Security-Functional-Safety": {
+						"Safety": false,
+						"Security": false
+					},
+					"Security-Objective": {
+						"RefId": "6758AEEC08954",
+						"Value": null
+					},
+					"Damage-Scenario": [],
+					"Damage-Scenario-Comments": {
+						"RefId": "6758AEEC08955",
+						"Value": null
+					},
+					"Parent-Ref-Id": "ea596849-e4ee-4b74-8c77-8cef5da5f908",
+					"Asset-Type": "Personal Identifiable Information",
+					"Adverse-Consequences": null,
+					"Security-Property-Rationale": null,
+					"Threats": []
+				},
+				{
+					"RefId": "6758AEEC08958",
+					"Identified": true,
+					"Name": "Gateway",
+					"Description": null,
+					"Cyber-Security-Properties": [],
+					"Cyber-Security-Functional-Safety": {
+						"Safety": false,
+						"Security": false
+					},
+					"Security-Objective": {
+						"RefId": "6758AEEC08959",
+						"Value": null
+					},
+					"Damage-Scenario": [],
+					"Damage-Scenario-Comments": {
+						"RefId": "6758AEEC0895A",
+						"Value": null
+					},
+					"Parent-Ref-Id": "8181d74a-9188-4ec4-87e1-e1206d0e15f2",
+					"Asset-Type": "Personal Identifiable Information",
+					"Adverse-Consequences": null,
+					"Security-Property-Rationale": null,
+					"Threats": []
+				},
+				{
+					"RefId": "6758AEEC089F2",
+					"Identified": true,
+					"Name": "TargetCmdOut (1122)",
+					"Description": null,
+					"Cyber-Security-Properties": [],
+					"Cyber-Security-Functional-Safety": {
+						"Safety": false,
+						"Security": false
+					},
+					"Security-Objective": {
+						"RefId": "6758AEEC08A02",
+						"Value": null
+					},
+					"Damage-Scenario": [],
+					"Damage-Scenario-Comments": {
+						"RefId": "6758AEEC08A03",
+						"Value": "TargetCmdOut (1122)-Damage-Scenario-Comments"
+					},
+					"Parent-Ref-Id": "93510d14-d51f-4460-a5e2-eba919eec005",
+					"Asset-Type": "Personal Identifiable Information",
+					"Adverse-Consequences": "Enables a future attack",
+					"Security-Property-Rationale": null,
+					"Threats": []
+				}
+			],
+			"Identification": {
+				"Threats": [
+					{
+						"RefId": "67594B8420E85",
+						"Threat-Identified": true,
+						"Security-Objective": {
+							"RefId": "6758AEEC088DD",
+							"Value": "The Authorisation of the logs of the Secure logging item, shall be protected against Elevation of Privilege."
+						},
+						"Impact-Ratings": {
+							"Safety": "Severe",
+							"Financial": "Severe",
+							"Operational": "Severe",
+							"Privacy": "Severe"
+						},
+						"Impact-Rating-Value": "Severe",
+						"Type-WP24-Annex-5": "Threats related to communication channels",
+						"Threat-Sub-Scenario": "Spoofing of messages - Impersonation, Sybil attack",
+						"Threat-Type": [
+							{
+								"value": "Elevation of Privilege",
+								"label": "Elevation of Privilege"
+							}
+						],
+						"Attack-Type": "Attack",
+						"Attack-RefId": "67594B8420E88",
+						"Attack-Steps": [
+							{
+								"Attack-Step": "AST.1",
+								"config-type": "manual",
+								"Attack-Step-Type": "MANUAL",
+								"Selected-Attack-Step-id": null,
+								"Selected-Step": null,
+								"Attack-Step-RefId": "f33bcdc4-efdb-444c-9f8d-b4c3c519f3c0",
+								"Attack-Step-Logic": null,
+								"Attack-Step-Description": null,
+								"Tool-class": null,
+								"Attack-Vector-class": null,
+								"Attack-Step-Specialist-Expertise": "Layman",
+								"Attack-Step-Window-of-Opportunity": "Unlimited",
+								"Attack-Step-Attack-Equipment": "Standard",
+								"Attack-Step-Attack-Elapsed-Time": "Less-Than-1-Week",
+								"Attack-Step-Knowledge-of-Item": "Negligible",
+								"Attack-Step-Attack-Feasibility-Rating": "High",
+								"Attack-Step-Impact-Rating": "Severe",
+								"Attack-Step-Risk-Rating": "5",
+								"Attack-Step-Security-Leval-Rating": null,
+								"Attack-Step-SeCL-Pref": false
+							},
+							{
+								"Attack-Step": "AST.2",
+								"config-type": "manual",
+								"Attack-Step-Type": "MANUAL",
+								"Selected-Attack-Step-id": null,
+								"Selected-Step": null,
+								"Attack-Step-RefId": "6786ba03-750e-4acb-9be1-1cd961975be8",
+								"Attack-Step-Description": null,
+								"Tool-class": null,
+								"Attack-Vector-class": null,
+								"Attack-Step-Specialist-Expertise": "Layman",
+								"Attack-Step-Window-of-Opportunity": "Unlimited",
+								"Attack-Step-Attack-Equipment": "Standard",
+								"Attack-Step-Attack-Elapsed-Time": "Less-Than-1-Week",
+								"Attack-Step-Knowledge-of-Item": "Negligible",
+								"Attack-Step-Attack-Feasibility-Rating": "High",
+								"Attack-Step-Impact-Rating": "Severe",
+								"Attack-Step-Risk-Rating": "5",
+								"Attack-Step-Security-Leval-Rating": null,
+								"Attack-Step-SeCL-Pref": false
+							}
+						],
+						"Attack-Effect": "Enables a future attack",
+						"Attack-CAL": {
+							"Key": "High-Severe",
+							"Value": "CAL4",
+							"Color": "#FF0000"
+						},
+						"Damage-Scenario": null,
+						"Cyber-Security-Goal": "The Authorisation of the logs of the Secure logging item, shall be protected against Elevation of Privilege.",
+						"Attack-Diagram": {
+							"Source-Nodes": [],
+							"Source-Links": []
+						},
+						"Risk-Acceptance": {
+							"Type": {
+								"label": "Reducing the Risk",
+								"value": "REDUCE"
+							},
+							"Security-Controls": [
+								{
+									"label": "SC.JTAG_LOCKED",
+									"value": "SC.JTAG_LOCKED"
+								}
+							],
+							"Reduced-Risk-Impact-Rating": [],
+							"Reduced-Risk-Ratings": [],
+							"Reduced-Risk-Cyber-Security-Requirement": "Functional CyberSecurity Requirement",
+							"Reduced-Risk-Cyber-Security-Claim": [],
+							"Reduced-Risk-Cyber-Security-Claim-Document": null,
+							"Reduced-Risk-Cyber-Security-Requirement-RefId": null,
+							"Cyber-Security-Requirements-Linked-To-Component-Hardware": {
+								"label": "Telematics Control Unit",
+								"value": "ea596849-e4ee-4b74-8c77-8cef5da5f908"
+							},
+							"Cyber-Security-Requirements-Linked-To-Component-Software": {
+								"label": "Application Software",
+								"value": "application"
+							},
+							"Input-Technical-Cyber-Security-Requirement": [
+								"Technical CyberSecurity Requirement"
+							],
+							"Cyber-Security-Requirements-Linked-To-Component-Software-Sub-Group": "Bootloader",
+							"Cyber-Security-Requirements-Linked-To-Component-Hardware-Sub-Group": "Sensors",
+							"Reduced-Risk-Feasibility-Rating": {
+								"Specialist-Expertise": "Multiple",
+								"Window-of-Opportunity": "Moderate",
+								"Attack-Equipment": "Multiple Bespoke",
+								"Attack-Elapsed-Time": "Less-than 3 years",
+								"Knowledge-of-Item": "Severe",
+								"Attack-Feasibility-Rating": "Low",
+								"Impact-Rating": "Moderate",
+								"Risk-Rating": "2"
+							}
+						},
+						"Threat-Target": {
+							"label": "CAN bus",
+							"value": "CAN bus"
+						},
+						"attack_catalogue_id": "A.ID.00041",
+						"step-type": null,
+						"stepType": {
+							"label": "MANUAL",
+							"value": "MANUAL"
+						},
+						"Threat_id": "T.ID.00043",
+						"attack_uuid": "677276C851C97",
+						"threat_uuid": "677276C850D32",
+						"design_type": "SYSTEM",
+						"Parent-Cyber-Security": "Authorisation",
+						"Prefer-SeCL-Ratings": false,
+						"Hazop-Object-Data": {
+							"Hazards-Uuids": []
+						},
+						"Attack-Feasibility-Rating": "High",
+						"Attack-Risk-Value": {
+							"Key": "High-Severe",
+							"Value": 5,
+							"Impact": "High",
+							"Color": "#FF0000"
+						},
+						"config-type": {
+							"label": "Manual",
+							"value": "manual"
+						},
+						"threat-catalogue": null,
+						"Asset-generated-hazards": "no",
+						"Threat-Scenario-Description": "Elevation of Privilege with the ECU could result in Compromise of the Authorisation of the logs (Personal Identifiable Information) of the Secure logging item, resulting in Enables a future attack.",
+						"User-Input-Threat-Scenarios": "Threat Scenarios",
+						"Generated-Threat-Scenarios": null,
+						"Generated-Threat-Scenarios-Responses": [],
+						"Parent-Asset": "logs",
+						"Threat-Reduced": true
+					},
+					{
+						"RefId": "67594B8420E89",
+						"Threat-Identified": true,
+						"Security-Objective": {
+							"RefId": "6758AEEC088DD",
+							"Value": "The Authenticity of the logs of the Secure logging item, shall be protected against Spoofing."
+						},
+						"Impact-Ratings": {
+							"Safety": "Negligible",
+							"Finanical": "Major",
+							"Operational": "Major",
+							"Privacy": "Major"
+						},
+						"Impact-Rating-Value": "Major",
+						"Type-WP24-Annex-5": "Threats from tampering of vehicle data\/code",
+						"Threat-Sub-Scenario": "Unauthorized changes to system diagnostic data, vehicle config data, system event logs",
+						"Threat-Type": [
+							{
+								"label": "Spoofing",
+								"value": "Spoofing"
+							}
+						],
+						"Attack-Type": "Attack",
+						"Attack-RefId": "6758D79073CB2",
+						"Attack-Steps": [
+							{
+								"Attack-step-id": "A.ID.0002.1",
+								"Attack-step-uuid": "6758D790749BF",
+								"Attack-Step": "Abuse UDS for Collection",
+								"config-type": "catalogue_based",
+								"Attack-Step-Type": "AUTOMOTIVE_ISAC",
+								"Selected-Attack-Step-id": "4",
+								"Selected-Step": {
+									"label": "Abuse UDS for Collection",
+									"value": 4,
+									"description": "<p>The adversary can attempt to abuse UDS ‘read’ capabilities, such as ‘read memory by address’ to access customer information from an ECU’s storage or memory.<\/p>"
+								},
+								"Attack-Step-RefId": "c0c04e3b-1892-4f46-b2ab-5d11b7aa57a5",
+								"Attack-Step-Description": "<p>The adversary can attempt to abuse UDS ‘read’ capabilities, such as ‘read memory by address’ to access customer information from an ECU’s storage or memory.<\/p>",
+								"Attack-Step-Attack-Feasibility-Rating": "High",
+								"Attack-Step-Impact-Rating": "Major",
+								"Attack-Step-Risk-Rating": 4,
+								"Attack-Step-Required-Resources": null,
+								"Attack-Step-Required-Knowhow": null,
+								"Attack-Step-Threat-Level": null,
+								"Attack-Step-Security-Leval-Rating": null,
+								"Attack-Step-Security-Leval-Rating-Color": null,
+								"Attack-Step-SeCL-Pref": true
+							},
+							{
+								"Attack-step-id": "A.ID.0002.2",
+								"Attack-step-uuid": "6758D790758B8",
+								"Attack-Step": "Bridge Vehicle Networks",
+								"config-type": "catalogue_based",
+								"Attack-Step-Type": "AUTOMOTIVE_ISAC",
+								"Selected-Attack-Step-id": "6",
+								"Selected-Step": {
+									"label": "Bridge Vehicle Networks",
+									"value": 6,
+									"description": "<p>The adversary may seek to bridge vehicle vehicle networks to obtain their objectives.<\/p><p>Some ECUs may possess multiple interfaces to the vehicle network, including interfaces that use different networking technologies, and an adversary could modify these ECUs to bridge networks that would otherwise be separated.<\/p><p>For example, an adversary that has gained initial access on an ECU with a connection to a vehicle’s Ethernet network may attempt to modify an ECU that is connected to the vehicle’s Ethernet and CAN networks so that they can extend their reach to ECU on the vehicle’s CAN network.<\/p>"
+								},
+								"Attack-Step-RefId": "31277491-0b15-48f3-8846-7a1f746c2779",
+								"Attack-Step-Description": "<p>The adversary may seek to bridge vehicle vehicle networks to obtain their objectives.<\/p><p>Some ECUs may possess multiple interfaces to the vehicle network, including interfaces that use different networking technologies, and an adversary could modify these ECUs to bridge networks that would otherwise be separated.<\/p><p>For example, an adversary that has gained initial access on an ECU with a connection to a vehicle’s Ethernet network may attempt to modify an ECU that is connected to the vehicle’s Ethernet and CAN networks so that they can extend their reach to ECU on the vehicle’s CAN network.<\/p>",
+								"Attack-Step-Attack-Feasibility-Rating": "High",
+								"Attack-Step-Impact-Rating": "Major",
+								"Attack-Step-Risk-Rating": 4,
+								"Attack-Step-Required-Resources": null,
+								"Attack-Step-Required-Knowhow": null,
+								"Attack-Step-Threat-Level": null,
+								"Attack-Step-Security-Leval-Rating": null,
+								"Attack-Step-Security-Leval-Rating-Color": null,
+								"Attack-Step-SeCL-Pref": true
+							}
+						],
+						"Attack-Effect": "Ensuring the authenticity of TCU (Transmission Control Unit) logs is crucial for several reasons, including accurate diagnostics, maintenance, legal compliance, and for validating claims in warranty disputes or accident investigations.",
+						"Attack-CAL": {
+							"Key": "High-Major",
+							"Value": "CAL4",
+							"Color": "#FF0000"
+						},
+						"Damage-Scenario": null,
+						"Cyber-Security-Goal": "The Authenticity of the logs of the Secure logging item, shall be protected against Spoofing.",
+						"Attack-Diagram": {
+							"Source-Nodes": [],
+							"Source-Links": []
+						},
+						"Risk-Acceptance": {
+							"Type": {
+								"label": "Avoiding the Risk",
+								"value": "AVOID"
+							},
+							"Security-Controls": [
+								{
+									"label": "SC.JTAG_LOCKED",
+									"value": "SC.JTAG_LOCKED"
+								}
+							],
+							"Reduced-Risk-Impact-Rating": [],
+							"Reduced-Risk-Ratings": [],
+							"Reduced-Risk-Cyber-Security-Claim": [
+								"Cyber Security Claim"
+							],
+							"Reduced-Risk-Cyber-Security-Claim-Document": null,
+							"Reduced-Risk-Cyber-Security-Requirement-RefId": null,
+							"Input-Technical-Cyber-Security-Requirement": [],
+							"Reduced-Risk-Feasibility-Rating": {
+								"Attack-Feasibility-Rating": null,
+								"Impact-Rating": null,
+								"Risk-Rating": null
+							}
+						},
+						"Threat_id": "T.ID.0002",
+						"attack_uuid": "6758D79073CB2",
+						"threat_uuid": "6758D726694CB",
+						"design_type": "SYSTEM",
+						"attack_catalogue_id": "A.ID.0002",
+						"Attack-Risk-Value": {
+							"Key": "High-Major",
+							"Value": 4,
+							"Impact": "High",
+							"Color": "#FFC000"
+						},
+						"step-type": {
+							"label": "AUTOMOTIVE_ISAC",
+							"value": "AUTOMOTIVE_ISAC"
+						},
+						"Threat-Target": {
+							"value": "ECU",
+							"label": "ECU"
+						},
+						"stepType": {
+							"label": "AUTOMOTIVE ISAC",
+							"value": "AUTOMOTIVE_ISAC"
+						},
+						"Attack-Feasibility-Rating": "High",
+						"config-type": {
+							"label": "Catalog Based",
+							"value": "catalogue_based"
+						},
+						"threat-catalogue": {
+							"label": "TCU Logs Authenticity",
+							"value": "6758D726694CB"
+						},
+						"Asset-generated-hazards": "no",
+						"Threat-Scenario-Description": "Encrypting the logs helps protect the data from unauthorized access and tampering. Only those with the correct decryption key, typically the manufacturer or authorized service providers, can access and read the logs.",
+						"User-Input-Threat-Scenarios": "Threat Scenarios",
+						"Generated-Threat-Scenarios": "1. An attacker intercepts communication between the remote teleops system and the asset logs, falsifies the data being transmitted, and spoofs the identity of the sender to gain unauthorized access to the system.\n\n2. An insider threat manipulates the asset logs to cover up their unauthorized activities within the remote teleops system, posing as an authorized user.\n\n3. A malicious actor gains access to the remote teleops system by spoofing their identity as an authorized user, allowing them to manipulate the asset logs and cover their tracks.",
+						"Generated-Threat-Scenarios-Responses": [
+							"1. An attacker intercepts communication between the remote teleops system and the asset logs, falsifies the data being transmitted, and spoofs the identity of the sender to gain unauthorized access to the system.\n\n2. An insider threat manipulates the asset logs to cover up their unauthorized activities within the remote teleops system, posing as an authorized user.\n\n3. A malicious actor gains access to the remote teleops system by spoofing their identity as an authorized user, allowing them to manipulate the asset logs and cover their tracks."
+						],
+						"Parent-Asset": "logs",
+						"Parent-Cyber-Security": "Authenticity",
+						"Threat-Reduced": true
+					}
+				],
+				"Total-Threats": 2,
+				"Reduced-Threats": 2,
+				"Identified-Threats": 2,
+				"Remaining-Threats": 0,
+				"Can-Promote-Risk-P2-Analysis": true,
+				"Can-Promote-Security-P2-Concept": true
+			},
+			"attackAltData": {
+				"6758AF4E36D59": [
+					{
+						"input": [
+							{
+								"name": "Credential Access",
+								"impact_rating": "Severe",
+								"risk_value": 5
+							},
+							{
+								"name": "Abuse UDS for Collection",
+								"impact_rating": "Severe",
+								"risk_value": 5
+							}
+						],
+						"gate": "AND",
+						"output": [
+							{
+								"name": "Bridge Vehicle Networks",
+								"impact_rating": "Severe",
+								"risk_value": "5"
+							}
+						]
+					},
+					{
+						"input": [
+							{
+								"name": "Bridge Vehicle Networks",
+								"impact_rating": "Severe",
+								"risk_value": "5"
+							},
+							{
+								"name": "Access personal data",
+								"impact_rating": "Severe",
+								"risk_value": "5"
+							}
+						],
+						"gate": "AND",
+						"output": [
+							{
+								"name": "The Authorisation of the logs of the Secure logging item, shall be protected against Elevation of Privilege.",
+								"impact_rating": null,
+								"risk_value": null
+							}
+						]
+					}
+				],
+				"6758DB26A152A": [
+					{
+						"input": [
+							{
+								"name": "T1205.002-Socket Filters(defense-evasion, persistence, command-and-control)",
+								"impact_rating": "Major",
+								"risk_value": "4"
+							},
+							{
+								"name": "T1110.001-Password Guessing(credential-access)",
+								"impact_rating": "Major",
+								"risk_value": "4"
+							}
+						],
+						"gate": "AND",
+						"output": [
+							{
+								"name": "The Authorisation of the logs of the Secure logging item, shall be protected against Elevation of Privilege.",
+								"impact_rating": null,
+								"risk_value": null
+							}
+						]
+					}
+				],
+				"6758DB26A152D": [
+					{
+						"input": [
+							{
+								"name": "Initial Access",
+								"impact_rating": "Major",
+								"risk_value": "4"
+							},
+							{
+								"name": "Adversarial Machine Learning",
+								"impact_rating": "Major",
+								"risk_value": "4"
+							}
+						],
+						"gate": "AND",
+						"output": [
+							{
+								"name": "The Authenticity of the logs of the Secure logging item, shall be protected against Spoofing.",
+								"impact_rating": null,
+								"risk_value": null
+							}
+						]
+					}
+				],
+				"67594B8420E85": [
+					{
+						"input": [
+							{
+								"name": "AST.1",
+								"impact_rating": "Severe",
+								"risk_value": "5",
+								"afr": "High"
+							},
+							{
+								"name": "AST.2",
+								"impact_rating": "Severe",
+								"risk_value": "5",
+								"afr": "High"
+							}
+						],
+						"gate": "OR",
+						"output": [
+							{
+								"name": "The Authorisation of the logs of the Secure logging item, shall be protected against Elevation of Privilege.",
+								"impact_rating": null,
+								"risk_value": null,
+								"afr": null
+							}
+						]
+					}
+				],
+				"67594B8420E89": [
+					{
+						"input": [
+							{
+								"name": "Abuse UDS for Collection",
+								"impact_rating": null,
+								"risk_value": null,
+								"afr": "High"
+							},
+							{
+								"name": "Bridge Vehicle Networks",
+								"impact_rating": "Major",
+								"risk_value": 4,
+								"afr": "High"
+							}
+						],
+						"gate": "AND",
+						"output": [
+							{
+								"name": "The Authenticity of the logs of the Secure logging item, shall be protected against Spoofing.",
+								"impact_rating": null,
+								"risk_value": null,
+								"afr": null
+							}
+						]
+					}
+				]
+			}
+		}
+	}
+}
